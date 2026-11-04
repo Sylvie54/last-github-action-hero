@@ -42,7 +42,7 @@ jobs:
       # TODO CI - 6. Résumé 1ère mission -> Github Markdown
 
   # Phase 2 - CD
-  cd:
+#  cd:
     needs: ci # Dépendance avec CI
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-26.04
